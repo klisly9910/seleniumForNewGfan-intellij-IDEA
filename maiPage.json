@@ -1,7 +1,0 @@
-{
-  "mainPage":{
-    "sbutton":".//*[@id='nav-top']/div[2]/div/a[1]",
-    "closeButton":"/html/body/div[10]/i"
-
-}
-}
