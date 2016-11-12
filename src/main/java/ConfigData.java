@@ -38,7 +38,7 @@ public class ConfigData {
     public void initData() {
         String data = null;
         try {
-            data = readFileToString(new File("/Users/klisly/workspace/seleniumForNewGfan-intellij-IDEA/src/main/java/mainpage.json"));
+            data = readFileToString(new File("/Users/klisly/workspace/seleniumForNewGfan-intellij-IDEA/Element/element.json"));
             dataModel = gson.fromJson(data,DataModel.class);
 
         } catch (IOException e) {
