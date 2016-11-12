@@ -56,7 +56,17 @@
             <artifactId>guice</artifactId>
             <version>4.1.0</version>
         </dependency>
-
+        <!-- https://mvnrepository.com/artifact/org.json/json -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>1.5-20090211</version>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20160212</version>
+        </dependency>
 
     </dependencies>
 
