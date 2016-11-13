@@ -12,6 +12,7 @@ public class DataModel {
      * game : .//*[@id="nav-top"]/div[2]/ul/li[6]/a
      * bbs : .//*[@id="nav-top"]/div[2]/ul/li[7]/a
      * newMedia : .//*[@id="nav-top"]/div[2]/ul/li[8]/a
+     * logo:/html/body/div[2]/div/a/img
      */
 
     private NavigatorBean navigator;
@@ -20,6 +21,13 @@ public class DataModel {
      */
 
     private ErrorMessageBean errorMessage;
+    /**
+     * logo : /html/body/div[5]/div/div[1]/strong/a
+     * footertop : /html/body/div[5]/div/div[1]/ul[1]/li/a
+     */
+
+    private FooterBean footer;
+
     /**
      * id : //*[@id="kw"]
      * button : //*[@id="su"]
@@ -42,6 +50,14 @@ public class DataModel {
         this.errorMessage = errorMessage;
     }
 
+    public FooterBean getFooter() {
+        return footer;
+    }
+
+    public void setFooter(FooterBean footer) {
+        this.footer = footer;
+    }
+
     public static class NavigatorBean {
         private String phone;
         private String computer;
@@ -51,6 +67,16 @@ public class DataModel {
         private String game;
         private String bbs;
         private String newMedia;
+        private String logo;
+
+
+        public String getLogo() {
+            return logo;
+        }
+
+        public void setLogo(String logo) {
+            this.logo = logo;
+        }
 
         public String getPhone() {
             return phone;
@@ -129,4 +155,25 @@ public class DataModel {
         }
     }
 
+
+    public static class FooterBean {
+        private String footerlogo;
+        private String footertop;
+
+        public String getFooterlogo() {
+            return footerlogo;
+        }
+
+        public void setFooterlogo(String logo) {
+            this.footerlogo = footertop;
+        }
+
+        public String getFootertop() {
+            return footertop;
+        }
+
+        public void setFootertop(String footertop) {
+            this.footertop = footertop;
+        }
+    }
 }
