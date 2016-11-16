@@ -11,22 +11,13 @@ import java.util.concurrent.TimeUnit;
  * Created by xiaohua on 11/11 0011.
  */
 public class TestFireFox {
-    WebDriver driver;
-    @BeforeMethod
-    public void init(){
-        Driver.getDriver("firefox");
-        driver = new FirefoxDriver();
-//        Driver.getDriver("chrome");
-//        driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(300, TimeUnit.SECONDS);
-        driver.manage().window().maximize();
 
+    WebDriver driver;
+
+    public TestFireFox(WebDriver driver) {
+        this.driver = driver;
     }
-    @AfterMethod(enabled = true)
-    public void end(){
-        driver.close();
-        driver.quit();
-    }
+
     @Test
     public void test(){
         driver.get("http://www.baidu.com");
